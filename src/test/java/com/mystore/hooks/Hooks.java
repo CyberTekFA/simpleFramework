@@ -7,12 +7,12 @@ import io.cucumber.java.Before;
 
 public class Hooks {
 
-    @Before
+    @Before(order = 1)
     public void setUpDriver(){
         Driver.getDriver().get(ConfigurationReader.getInstance().getProperty("url"));
     }
 
-    @After
+    @After(order = 2)
     public void tearDown(){
         Driver.closeDriver();
     }
