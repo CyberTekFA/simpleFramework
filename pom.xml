@@ -81,6 +81,9 @@
                 <configuration>
                     <rerunFailingTestsCount>1</rerunFailingTestsCount>
                     <testFailureIgnore>true</testFailureIgnore>
+                    <includes>
+                        <include>**/CukesRunner.java</include>
+                    </includes>
                 </configuration>
             </plugin>
             <plugin>
