@@ -83,8 +83,7 @@
                     <rerunFailingTestsCount>1</rerunFailingTestsCount>
                     <testFailureIgnore>true</testFailureIgnore>
                     <includes>
-                        <include>**/*SmokeRunner.java</include>
-                        <include>**/*CukesRunner.java</include>
+                        <include>**/CukesRunner.java</include>
                     </includes>
                 </configuration>
             </plugin>
