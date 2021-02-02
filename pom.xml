@@ -91,6 +91,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
+                            <projectName>my store </projectName>
                             <outputDirectory>${project.build.outputDirectory</outputDirectory>
                             <inputDirectory>${project.build.directory}</inputDirectory>
                             <checkBuildResult>true</checkBuildResult>
