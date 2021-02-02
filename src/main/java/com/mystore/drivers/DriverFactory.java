@@ -22,6 +22,13 @@ public class DriverFactory {
         options.setPageLoadStrategy(PageLoadStrategy.EAGER);
         return new ChromeDriver(options);
     };
+    private static final Supplier<WebDriver> getChromeHeadless = () -> {
+        WebDriverManager.chromedriver().setup();
+        ChromeOptions options = new ChromeOptions();
+        options.setPageLoadStrategy(PageLoadStrategy.EAGER);
+        options.setHeadless(true);
+        return new ChromeDriver(options);
+    };
 
     private static final Supplier<WebDriver> getFirefox = () -> {
         WebDriverManager.firefoxdriver().setup();
@@ -42,6 +49,7 @@ public class DriverFactory {
         MAP.put("chrome", getChrome);
         MAP.put("firefox", getFirefox);
         MAP.put("edge", getEdge);
+        MAP.put("chrome_headless",getChromeHeadless);
     }
 
     public static WebDriver getBrowserInstance(String key) {
