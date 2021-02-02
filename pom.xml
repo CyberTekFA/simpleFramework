@@ -92,7 +92,7 @@
                         </goals>
                         <configuration>
                             <projectName>my store </projectName>
-                            <outputDirectory>${project.build.outputDirectory</outputDirectory>
+                            <outputDirectory>${project.build.directory}</outputDirectory>
                             <inputDirectory>${project.build.directory}</inputDirectory>
                             <checkBuildResult>true</checkBuildResult>
                             <jsonFiles>
