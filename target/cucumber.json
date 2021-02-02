@@ -1,0 +1,76 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-02T17:36:36.457Z",
+        "line": 3,
+        "name": "I as user should be able to navigate to mystore application sign up page and when I",
+        "description": "    enter valid email and fill up field I shoudl be able to sign up successfully.",
+        "id": "user-should-be-sign-up-to-login;i-as-user-should-be-able-to-navigate-to-mystore-application-sign-up-page-and-when-i",
+        "after": [
+          {
+            "result": {
+              "duration": 144094000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mystore.hooks.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4443004000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I as user enter a valid email into email field",
+            "match": {
+              "location": "com.mystore.stepdefs.LoginPageSteps.i_as_user_enter_a_valid_email_into_email_field()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 225835000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click submit button",
+            "match": {
+              "location": "com.mystore.stepdefs.LoginPageSteps.i_click_submit_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 68847000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I verify sign Up page displayed",
+            "match": {
+              "location": "com.mystore.stepdefs.LoginPageSteps.i_verify_sign_up_page_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "user should be sign Up to login",
+    "description": "",
+    "id": "user-should-be-sign-up-to-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/LoingPage.feature",
+    "tags": []
+  }
+]
