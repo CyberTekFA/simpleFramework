@@ -10,7 +10,7 @@ public class Driver {
     private static WebDriver driver;
     private static final int TimeOut = 20;
     private static final int PageLoadTimeOut = 50;
-    private static final ThreadLocal<WebDriver> threadLocal = new ThreadLocal();
+    private static final ThreadLocal<WebDriver> threadLocal = new ThreadLocal<WebDriver>();
 
     private Driver() {
     }
