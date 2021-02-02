@@ -20,6 +20,7 @@ public class Driver {
             driver = DriverFactory.getBrowserInstance(ConfigurationReader.getInstance().getProperty("browser"));
             driver.manage().window().maximize();
             driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(PageLoadTimeOut));
+            driver.get(ConfigurationReader.getInstance().getProperty("url"));
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TimeOut));
             threadLocal.set(driver);
         }
